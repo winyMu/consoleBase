@@ -3,12 +3,12 @@
 
 # 接口使用
 
-1.初始化 <br>
+### 1.初始化 <br>
 初始化一个console端口，如果被占用会尝试最多20次，仍然失败会panic <br>
 func `InitConsolePort`(consolePort int) <br>
 <br>
-2.函数注册 <br>
-支持 **普通函数** 和 **strcut的成员函数** <br>
+### 2.函数注册 <br>
+支持 `普通函数` 和 `strcut的成员函数` <br>
 函数签名如下：一个string类型参数，一个返回值 <br>
 type `ConsoleCallBack` func(args string) string <br>
 **参数说明**：<br>
